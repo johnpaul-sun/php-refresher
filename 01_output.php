@@ -11,8 +11,8 @@ echo '<h1>Hello</h1>';
 print 'Hello';
 
 // print_r - Gives a bit more info. Can be used to print arrays
-print_r('Hello');
-print_r([1, 2, 3]);
+// print_r('Hello');
+// print_r([1, 2, 3]);
 
 // var_dump - Even more info like data type and length
 var_dump('Hello');
@@ -37,16 +37,21 @@ echo "Is your name O\'reilly?";
 <!-- You can output any HTML that you want within a .php file -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My PHP Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PHP Website</title>
 </head>
+
 <body>
-  <!-- You can output PHP including variables, etc -->
-  <h1>Hello <?php echo 'Brad'; ?></h1>
-  <!-- You may only drop the semi-colon after a statement when the statement is followed immediately by a closing PHP tag ?>. -->
-  <h1>Hello <?= 'Brad' ?></h1>
+    <!-- You can output PHP including variables, etc -->
+    <h1>Hello <?php echo 'Pong'; ?></h1>
+    <!-- You may only drop the semi-colon after a statement when the statement is followed immediately by a closing PHP tag ?>. -->
+    <h1>Hello <?= 'Pong' ?></h1>
+    <h1>Hello <?= define('HOST', 'localhost') ?></h1>
+    <h1>Hello <?= HOST ?></h1>
 </body>
+
 </html>

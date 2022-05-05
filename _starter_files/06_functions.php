@@ -12,3 +12,14 @@
     // code to be executed
   }
 */
+
+
+$add = function ($n1, $n2) {
+  return $n1 + $n2;
+};
+
+// echo $add(5, 5);
+
+$multiply = fn ($n1, $n2) => $n1 * $n2;
+
+echo $multiply(1, 3);
